@@ -8,6 +8,8 @@ public class ListApp {
 		//	삼각형은 삼각형끼리
 		//	각각 리스트 생성
 		
+		System.out.println("==사각형==================");
+
 		
 		//사각형 관리
 		RectList rList = new RectList();
@@ -30,15 +32,47 @@ public class ListApp {
 			rList.get(i).draw();
 		}
 		
+		//배열 갯수 출력 해보기
 		System.out.println(rList.size());
 		
+		
+		System.out.println("==원==================");
+
+		
 		//원 관리
+		CircleList cList = new CircleList();
 		
-		Circle cList = new Circle();
+		Circle c01 = new Circle(3);
+		Circle c02 = new Circle(4);
 		
+		cList.add(c01);
+		cList.add(c02);
+				
+		Circle cc = cList.get(1);	//1번째 방
+		cc.draw();
 		
+		//전체 출력
+		for(int i=0; i<cList.size(); i++) {
+			cList.get(i).draw();
+		}
 		
+		System.out.println("==삼각형==================");
+		//삼각형 관리
 		
+		TriangleList tList = new TriangleList();
+		
+		Triangle t01 = new Triangle(1, 2);
+		Triangle t02 = new Triangle(3, 4);
+		
+		tList.add(t01);
+		tList.add(t02);
+		
+		Triangle tri = tList.get(0);
+		tri.draw();
+		
+		for(int i=0; i<tList.size(); i++) {
+			tList.get(i).draw();
+		}
 	}
 
 }
