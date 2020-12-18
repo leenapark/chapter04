@@ -36,7 +36,7 @@ public class ListApp2 {
 		}
 		
 		System.out.println("==삼각형==================");
-		
+		//삼각형
 		Triangle t01 = new Triangle(1, 1);
 		Triangle t02 = new Triangle(2, 2);
 		

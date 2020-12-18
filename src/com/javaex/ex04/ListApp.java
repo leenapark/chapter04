@@ -1,6 +1,5 @@
 package com.javaex.ex04;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class ListApp {
